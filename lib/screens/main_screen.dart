@@ -32,27 +32,26 @@ class _MainScreenState extends State<MainScreen> {
         backgroundColor: AppTheme.surfaceColor,
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
-        NavigationDestination(
-          icon: const Icon(Icons.trending_up_outlined),
-          selectedIcon: const Icon(Icons.trending_up, color: AppTheme.primaryColor),
-          label: 'Watchlist',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.grid_view_outlined),
-          selectedIcon: const Icon(Icons.grid_view, color: AppTheme.primaryColor),
-          label: 'Heatmap',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.attach_money_outlined),
-          selectedIcon: const Icon(Icons.attach_money, color: AppTheme.primaryColor),
-          label: 'Dividends',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.feed_outlined),
-          selectedIcon: const Icon(Icons.feed, color: AppTheme.primaryColor),
-          label: 'News',
-        ),
-
+          NavigationDestination(
+            icon: const Icon(Icons.show_chart_outlined),
+            selectedIcon: const Icon(Icons.show_chart, color: AppTheme.primaryColor),
+            label: 'Markets',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.bookmark_outline),
+            selectedIcon: const Icon(Icons.bookmark, color: AppTheme.primaryColor),
+            label: 'Watchlist',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.calendar_month_outlined),
+            selectedIcon: const Icon(Icons.calendar_month, color: AppTheme.primaryColor),
+            label: 'Earnings',
+          ),
+          NavigationDestination(
+            icon: const Icon(Icons.notifications_none_outlined),
+            selectedIcon: const Icon(Icons.notifications, color: AppTheme.primaryColor),
+            label: 'Alerts',
+          ),
         ],
       ),
     );
